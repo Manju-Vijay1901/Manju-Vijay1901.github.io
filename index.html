@@ -4,17 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Manju Vijay's Data Analyst portfolio featuring an Excel Telecom Incident and SLA Dashboard project.">
+  <meta name="description" content="Manju Vijay's Data Analyst portfolio showcasing Excel projects, SQL skills and data analysis.">
   <title>Manju Vijay | Data Analyst Portfolio</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -25,9 +21,9 @@
     }
 
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #e2e8f0;
+      background: white;
       padding: 18px 8%;
+      border-bottom: 1px solid #e2e8f0;
     }
 
     nav {
@@ -35,7 +31,7 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 12px;
     }
 
     nav strong {
@@ -46,12 +42,10 @@
     nav a {
       color: #334155;
       text-decoration: none;
-      margin-left: 18px;
+      margin-left: 16px;
     }
 
-    nav a:hover {
-      color: #2563eb;
-    }
+    nav a:hover { color: #1d4ed8; }
 
     .hero {
       background: #eaf2ff;
@@ -64,10 +58,10 @@
     }
 
     .hero h1 {
+      color: #0f172a;
       font-size: 44px;
       line-height: 1.2;
-      margin: 0 0 15px;
-      color: #0f172a;
+      margin: 0 0 16px;
     }
 
     .hero p {
@@ -78,26 +72,12 @@
 
     .button {
       display: inline-block;
-      margin: 12px 10px 0 0;
-      padding: 11px 20px;
+      margin: 12px 8px 0 0;
+      padding: 10px 18px;
+      border-radius: 6px;
       background: #1d4ed8;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-    }
-
-    .button:hover {
-      background: #1e40af;
-    }
-
-    .button-outline {
-      background: transparent;
-      color: #1d4ed8;
-      border: 1px solid #1d4ed8;
-    }
-
-    .button-outline:hover {
-      color: white;
     }
 
     main {
@@ -107,14 +87,13 @@
     }
 
     section {
-      margin-bottom: 45px;
+      margin-bottom: 42px;
       scroll-margin-top: 20px;
     }
 
     h2 {
       font-size: 28px;
       color: #0f172a;
-      margin-bottom: 15px;
     }
 
     .card {
@@ -137,7 +116,6 @@
       color: #1e40af;
       padding: 7px 13px;
       border-radius: 5px;
-      font-size: 14px;
     }
 
     .project-image {
@@ -150,11 +128,6 @@
       border-radius: 8px;
     }
 
-    .project-card h3 {
-      font-size: 23px;
-      margin-top: 0;
-    }
-
     .metrics {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -164,15 +137,15 @@
 
     .metric {
       background: #f1f5f9;
-      border-radius: 8px;
       padding: 16px;
       text-align: center;
+      border-radius: 8px;
     }
 
     .metric strong {
       display: block;
-      color: #1d4ed8;
       font-size: 25px;
+      color: #1d4ed8;
     }
 
     .metric span {
@@ -182,27 +155,21 @@
 
     .recommendation {
       border-left: 4px solid #1d4ed8;
-      padding: 12px 16px;
       background: #eff6ff;
+      padding: 12px 16px;
       margin-top: 20px;
     }
 
     footer {
-      background: white;
-      border-top: 1px solid #e2e8f0;
       text-align: center;
       padding: 24px;
+      background: white;
+      border-top: 1px solid #e2e8f0;
       color: #64748b;
     }
 
-    a {
-      overflow-wrap: anywhere;
-    }
-
     @media (max-width: 650px) {
-      header {
-        padding: 16px 5%;
-      }
+      header { padding: 16px 5%; }
 
       nav {
         align-items: flex-start;
@@ -214,17 +181,9 @@
         margin: 0 12px 5px 0;
       }
 
-      .hero {
-        padding: 50px 6%;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      main {
-        padding: 28px 16px;
-      }
+      .hero { padding: 48px 6%; }
+      .hero h1 { font-size: 34px; }
+      main { padding: 28px 16px; }
 
       .metrics {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -235,193 +194,163 @@
 
 <body>
 
-  <header>
-    <nav>
-      <strong>Manju Vijay</strong>
+<header>
+  <nav>
+    <strong>Manju Vijay</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-      <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm Manju Vijay</h1>
+    <p>
+      Aspiring Data Analyst with knowledge of SQL and hands-on
+      experience creating Excel dashboards. Interested in analysing
+      data, tracking business performance, and communicating insights.
+    </p>
+    <a class="button" href="#projects">View My Project</a>
+    <a class="button" href="https://github.com/Manju-Vijay1901">
+      Visit My GitHub
+    </a>
+  </div>
+</div>
 
-  <div class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Manju Vijay</h1>
+<main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am an aspiring Data Analyst interested in using data to
+        understand business problems and support better decisions.
+        I have learned SQL and am currently learning Python.
+        I practise data analysis through hands-on projects using
+        Microsoft Excel, KPI reporting, and data visualisation.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>Microsoft Excel 2021</span>
+      <span>SQL</span>
+      <span>Excel Formulas</span>
+      <span>Data Cleaning</span>
+      <span>KPI Reporting</span>
+      <span>Data Visualisation</span>
+      <span>Python (Learning)</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Telecom Incident &amp; SLA Dashboard</h3>
+
+      <p><strong>Tool:</strong> Microsoft Excel 2021</p>
+      <p><strong>Project type:</strong> Data analysis and reporting</p>
 
       <p>
-        Aspiring Data Analyst interested in analysing data,
-        identifying business trends, and turning information
-        into meaningful insights using Excel and data visualisation.
+        Analysed 20 telecom incident records to review incident
+        priorities, resolution times, and Service Level Agreement
+        (SLA) performance.
       </p>
 
-      <a class="button" href="#projects">View My Project</a>
+      <img
+        class="project-image"
+        src="Screenshot%202026-10-21%20212054.png"
+        alt="Telecom Incident and SLA Dashboard created in Excel"
+      >
 
-      <a class="button button-outline"
-         href="https://github.com/Manju-Vijay1901">
-        Visit My GitHub
-      </a>
+      <h3>Key Findings</h3>
+
+      <div class="metrics">
+        <div class="metric">
+          <strong>20</strong>
+          <span>Total Incidents</span>
+        </div>
+        <div class="metric">
+          <strong>19</strong>
+          <span>Closed Incidents</span>
+        </div>
+        <div class="metric">
+          <strong>1</strong>
+          <span>Open Incident</span>
+        </div>
+        <div class="metric">
+          <strong>63.16%</strong>
+          <span>SLA Compliance</span>
+        </div>
+        <div class="metric">
+          <strong>7</strong>
+          <span>SLA Breaches</span>
+        </div>
+        <div class="metric">
+          <strong>4</strong>
+          <span>Critical Incidents</span>
+        </div>
+      </div>
+
+      <h3>Business Insights</h3>
+      <ul>
+        <li>20 incidents were recorded across multiple cities and teams.</li>
+        <li>12 of 19 closed incidents met their SLA targets.</li>
+        <li>7 closed incidents breached their SLA targets.</li>
+        <li>Critical incidents need appropriate prioritisation.</li>
+      </ul>
+
+      <div class="recommendation">
+        <strong>Business Recommendation</strong>
+        <p>
+          Investigate the seven SLA breaches to identify recurring
+          causes, prioritise critical incidents, and improve
+          resolution performance.
+        </p>
+      </div>
+
+      <p>
+        <em>
+          Note: This project uses practice data created for
+          portfolio learning.
+        </em>
+      </p>
     </div>
-  </div>
+  </section>
 
-  <main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        I am interested in entry-level Data Analyst opportunities.
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:manuvijay308@gmail.com">
+          manuvijay308@gmail.com
+        </a>
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/Manju-Vijay1901">
+          View my GitHub profile
+        </a>
+      </p>
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>About Me</h2>
+</main>
 
-      <div class="card">
-        <p>
-          I am an aspiring Data Analyst developing my analytical
-          and reporting skills through hands-on projects.
-          I enjoy organising datasets, analysing performance
-          metrics, and presenting findings to support business decisions.
-        </p>
-
-        <p>
-          My current focus is on Microsoft Excel, KPI reporting,
-          data visualisation, and building a strong foundation
-          in SQL and Python.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-
-      <div class="card skills">
-        <span>Microsoft Excel 2021</span>
-        <span>Excel Formulas</span>
-        <span>Data Cleaning</span>
-        <span>KPI Reporting</span>
-        <span>Charts and Visualisation</span>
-        <span>SLA Analysis</span>
-        <span>SQL - Learning</span>
-        <span>Python - Learning</span>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="card project-card">
-
-        <h3>Telecom Incident &amp; SLA Dashboard</h3>
-
-        <p><strong>Tool:</strong> Microsoft Excel 2021</p>
-
-        <p><strong>Project type:</strong> Data analysis and reporting</p>
-
-        <p>
-          Analysed 20 telecom incident records to evaluate incident
-          priorities, response and resolution times, and Service
-          Level Agreement (SLA) performance.
-        </p>
-
-        <img
-          class="project-image"
-          src="Screenshot%202026-10-21%20212054.png"
-          alt="Telecom Incident and SLA Dashboard created in Microsoft Excel"
-          loading="lazy"
-        >
-
-        <h3>Key Findings</h3>
-
-        <div class="metrics">
-          <div class="metric">
-            <strong>20</strong>
-            <span>Total Incidents</span>
-          </div>
-
-          <div class="metric">
-            <strong>19</strong>
-            <span>Closed Incidents</span>
-          </div>
-
-          <div class="metric">
-            <strong>1</strong>
-            <span>Open Incident</span>
-          </div>
-
-          <div class="metric">
-            <strong>63.16%</strong>
-            <span>SLA Compliance</span>
-          </div>
-
-          <div class="metric">
-            <strong>7</strong>
-            <span>SLA Breaches</span>
-          </div>
-
-          <div class="metric">
-            <strong>4</strong>
-            <span>Critical Incidents</span>
-          </div>
-        </div>
-
-        <h3>Business Insights</h3>
-
-        <ul>
-          <li>Reviewed 20 incidents across multiple cities and teams.</li>
-          <li>12 of 19 closed incidents met their SLA targets.</li>
-          <li>7 closed incidents exceeded their SLA targets.</li>
-          <li>Critical incidents require appropriate prioritisation.</li>
-        </ul>
-
-        <div class="recommendation">
-          <strong>Business Recommendation</strong>
-          <p>
-            Investigate the seven SLA breaches to identify recurring
-            causes, prioritise critical incidents, and find opportunities
-            to improve resolution performance.
-          </p>
-        </div>
-
-        <p>
-          <em>
-            Note: This project uses practice data created for
-            portfolio learning.
-          </em>
-        </p>
-
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <div class="card">
-        <p>
-          I am interested in entry-level Data Analyst opportunities
-          where I can apply my analytical skills and continue learning.
-        </p>
-
-        <p>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/Manju-Vijay1901">
-            github.com/Manju-Vijay1901
-          </a>
-        </p>
-
-        <p>
-          <strong>LinkedIn:</strong>
-          Add your LinkedIn profile URL here.
-        </p>
-
-        <p>
-          <strong>Email:</strong>
-          Add your professional email address here.
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Manju Vijay | Data Analyst Portfolio</p>
-  </footer>
+<footer>
+  <p>Manju Vijay | Data Analyst Portfolio</p>
+</footer>
 
 </body>
 </html>
